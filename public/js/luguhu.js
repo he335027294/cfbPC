@@ -1,0 +1,55 @@
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var topp = $(document).scrollTop();
+        console.log(topp);
+        if(topp>=600){
+            $(".impression").css({width:"288px",position:"fixed",top:"90px",right:"250px",marginLeft:"15px"});
+            $(".sign").css({width:"40px",position:"fixed",top:"90px"});
+            $(".trip").css({marginLeft:"50px",width:"605px"})
+        }
+        if(topp<600){
+            $(".impression").css({position:"relative",top:"0",marginLeft:"0px",right:"0"});
+            $(".sign").css({position:"relative",top:"0"})
+            $(".trip").css({marginLeft:"0",width:"605px"})
+        }
+        if(topp>=5800){
+            $(".map").slideUp();
+            $(".app_download").slideUp();
+            $(".icon_top").css({top:"100px",transition:"0.8s"});
+        }
+        if(topp<5800){
+            $(".map").slideDown();
+            $(".app_download").slideDown();
+            $(".icon_top").css({top:"0px",transition:"0.6s"});
+        }
+        if(topp>=1000){
+            $(".aside").css({opacity:"1"})
+        }
+        if(topp<1000){
+            $(".aside").css({opacity:"0"})
+        }
+        if(topp>=6000){
+            $(".aside>.icon_top").css({position:"fixed",bottom:"100px",right:"50px"})
+        }
+        if(topp<6000){
+            $(".aside>.icon_top").css({position:"absolute",right:"0"})
+        }
+        if(topp>630&&topp<=2380){
+            $("#sign_d1").addClass("signGetfocus");
+        }else{
+            $("#sign_d1").removeClass("signGetfocus");
+        }
+        if(topp>2380&&topp<=4950){
+            $("#sign_d2").addClass("signGetfocus");
+        }else{
+            $("#sign_d2").removeClass("signGetfocus");
+        }
+        if(topp>4950){
+            $("#sign_d3").addClass("signGetfocus");
+        }else{
+            $("#sign_d3").removeClass("signGetfocus");
+        }  
+    })
+    //console.log("页面加载完成")
+})
+//$(window).onmouse

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole">
+        <div class="mask"></div>
+        <div class="container">
+            <div class="font_icon"></div>
+            <div class="user">
+                <div class="title">
+                    <div class="line"></div>
+                    <div>注册账户</div>
+                    <div class="line"></div>
+                </div>
+                <div class="form_content">
+                    <!-- <form action="/register/register" method="post"> -->
+                        <div class="input_frame">
+                            <input class="me_input" placeholder="邮箱" id="email">
+                            <input class="me_input" placeholder="用户名" id="uname">
+                            <input class="me_input" placeholder="请输入6-12位密码" type="password" id="upwd">
+                            <input class="me_input" placeholder="确认密码" type="password" id="checkupwd">
+                        </div>
+                        <div class="is_agree">
+                            <input type="checkbox" id="isAgree">
+                            <span>已同意<a href="#">《出发吧使用协议》</a></span>
+                        </div>
+                        <div id="tip"></div>
+                        <input type="button" class="my_btn btn_reg" value="注册" id="register">
+                    <!-- </form> -->
+                </div>
+                <div class="title">
+                    <div class="line"></div>
+                    <div>or</div>
+                    <div class="line"></div>
+                </div>
+                <div class="other_platform">
+                    <div class="weibo_circle">
+                        <div class="weibo"></div>
+                    </div>
+                    <div>
+                        <div class="qq"></div>
+                    </div>
+                    <div>
+                        <div class="weixin"></div>
+                    </div>
+                </div>
+                <input type="button" class="my_btn btn_already" value="已有账号？立即登陆" onclick="javascript:window.location.href='./login.html'">
+            </div> 
+        </div>
+    </div>
+    <script src="./js/register.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    background:#e9e9e9;
+}
+/*===============================*/
+.body_content{
+    width:960px;
+    margin:0px auto;
+    padding-bottom:100px;
+}
+.tabber_nav{
+    padding-top:4px;
+    padding-bottom:4px;
+    color:rgb(153,153,153);
+}
+.tabber_nav p a:link{
+    color:rgb(153,153,153);
+    text-decoration: none;
+}
+.tabber_nav p a:hover{
+    text-decoration:underline;
+}
+.title{
+    font-size:1.5rem;
+    padding-bottom:10px;
+}
+/*===============================*/
+.pics{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:row wrap;
+    align-items: flex-start;
+}
+.quchu_item{
+    width:470px;
+    height: 195px;
+    background-color:lightcoral; 
+    margin-bottom:20px;
+    border-radius:8px;
+    overflow: hidden;
+    position:relative;
+    cursor:pointer;
+}
+.quchu_item:hover>.mask{
+    background-color:rgba(0,0,0,0.2);
+}
+.quchu_item:hover>img{
+    height:110%;
+    width:110%;
+    left:-5%;
+    top:-5%;
+}
+.quchu_item>.mask{
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index:3;
+    transition:1s;
+}
+.quchu_item>img{
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    z-index:1;
+    transition:1s;
+}
+
+.quchu_item>.item_text{
+    position:relative;
+    width:100%;
+    height:100%;
+    z-index:5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column nowrap;
+    color:#fff;
+}
+.quchu_item>.item_text>.item_title{
+    font-size:1.6rem;
+    text-shadow:0 0 5px #000;
+}
+.quchu_item>.item_text>.item_subtitle{
+    margin-top:4px;
+}

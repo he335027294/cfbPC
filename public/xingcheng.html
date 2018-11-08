@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/xingcheng.css">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <title>行程</title>
+</head>
+<body>
+    <!--页头-->
+    <div class="nav"></div>
+    <!--主体-->
+    <div class="body_content">
+        <div class="tabber_nav">
+            <p><a href="#">首页</a> > <a href="#">行程</a></p>
+        </div>
+        <div class="title">行程</div>
+        <div class="xingcheng">
+            <div class="zone_left">
+                <div class="left_title">
+                    <div id="local" class="active">国内</div>
+                    <div id="foreign">国外</div>
+                </div>
+                <div class="left_content">
+                    <div class="local_place" id="local_place">
+                        <div>安徽</div>
+                        <div>北京</div>
+                        <div>澳门</div>
+                        <div>重庆</div>
+                        <div>福建</div>
+                        <div>甘肃</div>
+                        <div>广东</div>
+                        <div>广西</div>
+                        <div>贵州</div>
+                        <div>海南</div>
+                        <div>河北</div>
+                        <div>黑龙江</div>
+                        <div>河南</div>
+                        <div>湖南</div>
+                        <div>江苏</div>
+                        <div>江西</div>
+                        <div>吉林</div>
+                        <div>湖北</div>
+                        <div>辽宁</div>
+                        <div>内蒙古</div>
+                        <div>宁夏</div>
+                        <div>青海</div>
+                        <div>山东</div>
+                        <div>上海</div>
+                        <div>陕西</div>
+                        <div>山西</div>
+                        <div>四川</div>
+                        <div>台湾</div>
+                        <div>天津</div>
+                        <div>香港</div>
+                        <div>西藏</div>
+                        <div>新疆</div>
+                        <div>云南</div>
+                        <div>浙江</div>
+                    </div>
+                    <div class="foreign_place active" id="foreign_place">
+                        <div>阿根廷</div>
+                        <div>爱尔兰</div>
+                        <div>阿联酋</div>
+                        <div>澳大利亚</div>
+                        <div>巴巴多斯</div>
+                        <div>奥地利</div>
+                        <div>巴哈马</div>
+                        <div>巴西</div>
+                        <div>比利时</div>
+                        <div>波黑</div>
+                        <div>丹麦</div>
+                        <div>德国</div>
+                        <div>厄瓜多尔</div>
+                        <div>俄罗斯</div>
+                        <div>法国</div>
+                        <div>韩国</div>
+                        <div>荷兰</div>
+                        <div>加拿大</div>
+                        <div>柬埔寨</div>
+                        <div>捷克</div>
+                        <div>卡塔尔</div>
+                        <div>卢森堡</div>
+                        <div>马来西亚</div>
+                        <div>美国</div>
+                        <div>缅甸</div>
+                        <div>摩纳哥</div>
+                        <div>尼泊尔</div>
+                        <div>挪威</div>
+                        <div>葡萄牙</div>
+                        <div>日本</div>
+                        <div>瑞典</div>
+                        <div>瑞士</div>
+                        <div>泰国</div>
+                        <div>西班牙</div>
+                        <div>英国</div>
+                        <div>印度</div>
+                    </div>
+                </div>
+            </div>
+            <div class="zone_right" id="zone_right">
+                <div class="local_trip active" id="local_trip">
+                    <!--<div class="trip_item">
+                        <div class="mask"></div>
+                        <img src="/img/xingcheng/local/蓉城.jpg" alt="">
+                        <div class="trip_desc">
+                            <div>秋意浓，蓉城红</div>
+                            <div>2018/10/01 / 7天 / 成都</div>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="foreign_trip" id="foreign_trip">
+                    <!--<div class="trip_item">
+                        <div class="mask"></div>
+                        <img src="/img/xingcheng/local/蓉城.jpg" alt="">
+                        <div class="trip_desc">
+                            <div>秋意浓，蓉城红</div>
+                            <div>2018/10/01 / 7天 / 成都</div>
+                        </div>
+                    </div>-->
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--页尾-->
+    <div class="footer"></div>
+</body>
+<script src="./js/xingcheng.js"></script>
+<script>
+    $(".nav").load("nav.html");
+    $(".footer").load("footer.html");
+</script>
+</html>

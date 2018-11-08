@@ -1,0 +1,57 @@
+<div class="nav">
+    <div class="container">
+        <div class="nav_left">
+            <div>
+                <img src="./img/nav/cfb_logo.png" alt="">
+            </div>
+            <div>
+                <a href="./font_page.html">首页</a>
+            </div>
+            <div>
+                <a href="./diy_custom.html">定制</a>
+            </div>
+            <div>
+                <div id="inspire">
+                    <a href="#">灵感</a>
+                    <div id="inspirations">
+                        <div><a href="./xingcheng.html">行程</a></div>
+                        <div><a href="./quchu.html">去处</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_right">
+            <div class="nav_inputframe">
+                <input type="text" class="nav_input" placeholder="搜索国家或城市">
+                <div class="nav_search"></div>
+            </div>
+            <div>
+                <span id="already"><span id="myuser"></span> / <span id="quit">退出登录</span></span>
+                <span id="notYet"><a href="./register.html">注册</a> / <a href="./login.html">登陆</a></span> 
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        var notYet=$("#notYet");
+        var already=$("#already");
+        var myuser=$("#myuser");
+        var cfbUname=sessionStorage.getItem("cfbUname");
+        if(cfbUname==""||cfbUname==null){
+            notYet.css("display","block");
+            already.css("display","none");
+        }else{
+            notYet.css("display","none");
+            already.css("display","block");
+            myuser.html(cfbUname);
+        }
+        already.css("fontSize","1rem");
+    })
+    var quitme=$("#quit");
+    quitme.css("cursor","pointer");
+    quit.onclick=function(){
+        sessionStorage.setItem("cfbUname","");
+        history.go(0);
+    }
+</script>

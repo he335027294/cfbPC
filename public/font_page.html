@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/font_page.css">
+        <script src="./js/jquery-1.11.3.js"></script>
+        <title>出发吧，首页</title> 
+    </head>
+    <body>
+        <!-- zone1 -->
+        <div class="zone1">
+            <div class="zone1_inner">
+                <div class="zone1_text">
+                    <div class="zone1_nav">
+                        <div class="nav_left">
+                            <div>
+                                <img src="./img/font_page/zone1/logo.png" alt="">
+                            </div>
+                            <div>
+                                <a href="#">首页</a>
+                            </div>
+                            <div>
+                                <a href="./diy_custom.html">定制</a>
+                            </div>
+                            <div id="inspire">
+                                <a href="#">灵感</a>
+                                <div id="inspirations">
+                                    <div><a href="./xingcheng.html">行程</a></div>
+                                    <div><a href="./quchu.html">去处</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav_right">
+                            <div>
+                                <input type="text" class="nav_input" placeholder="搜索国家或城市">
+                            </div>
+                            <div>
+                                <span id="already"><span id="myuser"></span> / <span id="quit">退出登录</span></span>
+                                <span id="notYet"><a href="./register.html">注册</a> / <a href="./login.html">登陆</a></span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zone1_center">
+                        <a href="#"><img src="./img/font_page/zone1/zone1_intro.png" alt="" class="zone1_intro"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- zone2 -->
+        <div class="zone2" style="overflow: hidden;">
+            <div class="zone2_left">
+                <div class="zone2_inner left_change">
+                    <p><img src="./img/font_page/zone2/custom_help.png" alt=""></p>
+                    <p>由行程规划师为你提供1对1定制服务</p>
+                    <p>包含行程定制、全程预定、旅行管家行中支持等服务</p>
+                    <p><a href="./diy_custom.html"><span class="zone2_button left_button">帮我定制</span></a></p>
+                </div>
+            </div>
+            <div class="zone2_right">
+                <div class="zone2_inner right_change">
+                    <p><img src="./img/font_page/zone2/custom_diy.png" alt=""></p>
+                    <p>使用旅行计划APP在手机上自助完成行程规划和预定</p>
+                    <p>同时提供攻略、导航等行中实用功能</p>
+                    <p><a href="./diy_custom.html"><span class="zone2_button right_button">自助定制</span></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- zone3 -->
+        <div class="zone3">
+            <p class="subtitle">热门目的地定制</p>
+            <div class="zone3_gallary">
+                <div>
+                    <img src="./img/font_page/zone3/gaoyeshan.jpg" alt="">
+                    <div>
+                        <p>高野山四天三晚避世体验</p>
+                        <p>￥3500</p>
+                    </div>
+                    <div class="mask">
+                        <div class="mask_text">
+                            <img src="./img/font_page/zone3/erweima.png" alt="">
+                            <p>扫码查看详情</p>
+                        </div>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/font_page/zone3/xiamen.jpg" alt="">
+                    <div>
+                        <p>麻烦跟我去厦门疯一回</p>
+                        <p>￥3680</p>
+                    </div>
+                    <div class="mask">
+                        <div class="mask_text">
+                            <img src="./img/font_page/zone3/erweima.png" alt="">
+                            <p>扫码查看详情</p>
+                        </div>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/font_page/zone3/balidao.jpg" alt="">
+                    <div>
+                        <p>巴厘岛六天五晚度假体验</p>
+                        <p>￥3760</p>
+                    </div>
+                    <div class="mask">
+                        <div class="mask_text">
+                            <img src="./img/font_page/zone3/erweima.png" alt="">
+                            <p>扫码查看详情</p>
+                        </div>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/font_page/zone3/meixiyihao.jpg" alt="">
+                    <div>
+                        <p>美西一号公路自驾游定制</p>
+                        <p>￥7599</p>
+                    </div>
+                    <div class="mask">
+                        <div class="mask_text">
+                            <img src="./img/font_page/zone3/erweima.png" alt="">
+                            <p>扫码查看详情</p>
+                        </div>
+                        <div class="mask_bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- zone4 -->
+        <div class="zone4">
+            <div class="zone4_inner">
+                <div class="zone4_text">
+                    <div class="zone4_nav">
+                        <div class="nav4_left">
+                            <img src="./img/font_page/zone4/huanyihuan.png" alt="">
+                            <a href="#"><span>换一批</span></a>
+                        </div>
+                        <div class="zone4_title"><span>灵感</span></div>
+                        <div class="nav4_right">
+                            <a href="./xingcheng.html"><span>更多行程</span></a>
+                            <a href="./quchu.html"><span>更多去处</span></a>
+                        </div>
+                    </div>
+                    <!-- 相框 -->
+                    <div class="pic_frame">
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/daozhongdao.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>岛中岛</p>
+                                <p>宿雾、薄荷岛</p>
+                                <p><img src="./img/font_page/zone4/user/user1.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/guangzhou.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>美食寻踪，广而州知</p>
+                                <p>广州</p>
+                                <p><img src="./img/font_page/zone4/user/user1.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/xiariji.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>夏日祭</p>
+                                <p>东京 、 京都 、 大阪 、 奈良 、 镰仓市</p>
+                                <p><img src="./img/font_page/zone4/user/user1.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/yungui.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>云贵之旅•纯净之礼</p>
+                                <p>成都、元谋、腾冲、昆明、贵阳 </p>
+                                <p><img src="./img/font_page/zone4/user/user2.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/qinghuangdao.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>战云 雄关 沧海·秦皇岛</p>
+                                <p>秦皇岛</p>
+                                <p><img src="./img/font_page/zone4/user/user2.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/beijiang.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>走在北疆的路上</p>
+                                <p> 乌鲁木齐、布尔津、阿勒泰、禾木</p>
+                                <p><img src="./img/font_page/zone4/user/user2.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/chongqing.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>山城，桥城，重庆如是说</p>
+                                <p>重庆</p>
+                                <p><img src="./img/font_page/zone4/user/user3.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/shanghai.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>山海之约</p>
+                                <p>台州、临海、绍兴</p>
+                                <p><img src="./img/font_page/zone4/user/user3.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/font_page/zone4/pic_frame/sawadika.jpg" alt="">
+                            <div>
+                                <p>行程</p>
+                                <p>萨瓦迪卡 我来啦</p>
+                                <p>曼谷、清迈、普吉岛、清莱</p>
+                                <p><img src="./img/font_page/zone4/user/user3.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+        <!-- zone5 -->
+        <div class="zone5">
+            <p class="subtitle">印象</p>
+            <div class="photo_wall">
+                
+                <div>
+                    <img src="./img/font_page/zone5/taohuayuan.jpeg" alt="">
+                    <p>安徽泾县，美如画，还有好多照片找不到了...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 桃花潭</span>
+                        <span>+_+~~</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/songdai.jpg" alt="">
+                    <p>今天一早八点半在越后汤泽站现场购票，参加大地艺术祭官方游览路线中的羚羊路线，乘坐大巴，有日语领队...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 松代</span>
+                        <span>爱狗的猫菲</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/shanxi.jpg" alt="">
+                    <p>非常值得一看，但是人真的是太多了……从携程上订了团，好歹还没排很久的队</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 陕西历史博物馆</span>
+                        <span>沫离丫头</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/qinshihuang.jpg" alt="">
+                    <p>第二次来看，也一样的赞叹，一样的精憾，一个浩大的工程，一段不敢想象的历史，奇迹，历史，厚重……</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 秦始皇兵马俑</span>
+                        <span>可口可乐</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/qinglongshan.jpg" alt="">
+                    <p>青龙山的景色很美，有树有草，蚊子有点多。我们从山底下爬到山顶大约20分钟左右，山路很陡，偶尔还有大树枝...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 青龙山</span>
+                        <span>浅忆</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/paxinsi.jpg" alt="">
+                    <p>金光灿灿，Google导航导的后门进入，进门就去金灿灿的佛塔，进入室内要脱鞋，这里的看门兽都很独特。</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 帕辛寺</span>
+                        <span>小飞侠666</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/nailianggongyuan.jpg" alt="">
+                    <p>夏季的公园真是很舒服...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 奈良公园</span>
+                        <span>Feez0</span>
+                    </div>
+                </div>
+            
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/heimahexiang.jpg" alt="">
+                    <p>晚上拍了星空，早上拍了日出，拍完日出吃完早点出发，住宿很差，住了奇石青旅的三人间是彩钢房...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 黑马河乡</span>
+                        <span>简单的He</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/gaotianerbao.jpg" alt="">
+                    <p>同样梦幻</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 高天鹅堡</span>
+                        <span>遥远视界</span>
+                    </div>
+                </div>
+            
+            
+                 <div>
+                    <img src="./img/font_page/zone5/daxiongmao.jpg" alt="">
+                    <p>大熊猫基地超赞啊！不过来的时候温度和天气都不合适，下着雨，三十多摄氏度，又热又闷，大熊猫们都在室内...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 大熊猫繁育研究基地</span>
+                        <span>Phyllis</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/tinshengqiao.jpg" alt="">
+                    <p>最喜欢的景区，天生桥名不虚传，不同的景色，不同的感受仿佛走入疑是银河落九天的画境之中</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 天生桥</span>
+                        <span>可口可乐</span>
+                    </div>
+                </div>
+            
+            
+                 <div>
+                    <img src="./img/font_page/zone5/wanshizhiwuyuan.jpg" alt="">
+                    <p>超喜欢这种感觉！大大的太阳，走在树荫下，阳光斑驳。坐车十块，但是排队的人太多了，就步行了，走一走也不累...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 万石植物园</span>
+                        <span>小鱼干</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/wulanbutong.jpg" alt="">
+                    <p>乌兰布统走到哪里都是风景，超级的美，120的门票超级值得，和画片一样可以拿来做桌面壁纸呀！</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 乌兰布统旅游景区</span>
+                        <span>徐莹eval</span>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <img src="./img/font_page/zone5/wutaishan.jpg" alt="">
+                    <p>自驾行 “五台山五峰耸立，高出云表，山顶无林木，有如垒土之台，故曰五台。”五台山是中国四大佛教名山之首...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 五台山风景区</span>
+                        <span>懵懵懂懂de大蒙</span>
+                    </div>
+                </div>
+            
+                <div>
+                     <img src="./img/font_page/zone5/xiaoqikong.jpg" alt="">
+                     <p>贵州自然风光，最美的还是大小七孔景区，西江千户苗寨，商业化极其严重，是我最难受的，但整体风光还可以...</p>
+                    <div>
+                        <span><img src="./img/font_page/zone5/site.gif" alt=""> 小七孔景区</span>
+                        <span>江雪</span>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="frame_more"><p>查看更多印象</p></a>
+        </div>
+        <!-- footer -->
+        <div class="footer"></div>
+        <script src="./js/font_page.js"></script>
+        <script>
+            $(".footer").load("footer.html");
+            $(function(){
+                var notYet=$("#notYet");
+                var already=$("#already");
+                var myuser=$("#myuser");
+                var cfbUname=sessionStorage.getItem("cfbUname");
+                if(cfbUname==""||cfbUname==null){
+                    notYet.css("display","block");
+                    already.css("display","none");
+                }else{
+                    notYet.css("display","none");
+                    already.css("display","block");
+                    myuser.html(cfbUname);
+                }
+            })
+            var quitme=$("#quit");
+            quitme.css("cursor","pointer");
+            quit.onclick=function(){
+                sessionStorage.setItem("cfbUname","");
+                history.go(0);
+            }
+        </script>
+    </body>
+</html>

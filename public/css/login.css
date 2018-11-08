@@ -1,0 +1,204 @@
+*{
+    margin:0px;
+    font-family: "微软雅黑";
+    color:white;
+}
+body{
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    background:rgb(40,50,50);
+}
+.whole{
+    background:rgb(0,0,0) url("../img/register/bg_img.jpg") no-repeat;
+    background-size:cover;
+    margin:0px auto;
+    width: 100%;
+    height:1200px;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+}
+.container{
+    position:fixed;
+    top:25px;
+    width:100%;
+    z-index:2;
+}
+.font_icon{
+    width:76px;
+    height:98px;
+    background:url(../img/register/icon_bank.png);
+    background-position:-11px -115px;
+    margin:0px auto;
+}
+.user{
+    width:300px;
+    margin:0px auto;
+    text-align: center;
+}
+.form_content{
+    height:200px;
+}
+.title{
+    color:white;
+    margin:15px auto 10px;
+    font-family:"微软雅黑";
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title>div.line{
+    border:1px solid white;
+    width:30%;
+    height:0px;
+}
+.input_frame{
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+}
+.login_frame{
+    box-sizing: border-box;
+    padding-top:20px;
+}
+.me_input{
+    box-sizing:border-box;
+    width:100%;
+    height:45px;
+    border:0;
+    padding-left:20px;
+    margin-bottom:0px;
+    outline:none;
+    font-size:1.2rem;
+    color:black;
+}
+.me_input:first-child{
+    border-radius: 3px 3px 0 0;
+}
+.me_input:last-child{
+    border-radius: 0 0 3px 3px;
+}
+.me_input:first-child~input{
+    border-top:1px solid #aaa;
+}
+.is_agree{
+    margin-top:15px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.is_agree>input{
+    height:18px;
+    width:18px;
+    margin-right:5px;
+}
+.is_agree span{
+    font-size:0.8rem;
+}
+.is_agree span>a{
+    color:rgb(60,204,153);
+    text-decoration: none;
+}
+.is_agree span>a:hover{
+    text-decoration:underline;
+}
+#tip{
+    width:100%;
+    height:30px;
+    color:red;
+    margin-top:4px;
+}
+.my_btn{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    font-size:1.2rem;
+    border:0;
+    border-radius:3px;
+    outline:0;
+    cursor: pointer;
+    transition:0.5s;
+}
+/* button */
+.btn_signin:hover,
+.btn_already:hover{
+    background-color:rgb(60,204,153);
+}
+.btn_reg:hover,
+.btn_notyet:hover{
+    background-color:rgb(230, 190, 17);
+}
+.btn_reg{
+    border:1px solid gray;
+    background:transparent;
+    margin-bottom:20px;   
+}
+.btn_signin{
+    border:1px solid gray;
+    background:transparent;
+    margin-bottom:20px;
+}
+
+.other_platform{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.other_platform>div{
+    height:70px;
+    width:70px;
+    border:2px solid gray;
+    box-sizing:border-box;
+    border-radius:50%;
+    transition:0.5s;
+    cursor: pointer;
+}
+.other_platform>div>div{
+    height:27px;
+    width:32px;
+    margin:22px auto 0px;
+}
+.weibo{
+    background:url("../img/register/icon_bank.png");
+    background-position: -2px -3px;
+}
+.qq{
+    background:url("../img/register/icon_bank.png");
+    background-position: -35px -3px;
+}
+.weixin{
+    background:url("../img/register/icon_bank.png");
+    background-position: -66px -3px;
+}
+.other_platform>div:hover{
+    background:#eee;
+}
+.other_platform>div:nth-child(1):hover div{
+    background-position: -2px -35px;
+}
+.other_platform>div:nth-child(2):hover div{
+    background-position: -35px -35px;
+}
+.other_platform>div:nth-child(3):hover div{
+    background-position: -66px -35px;
+}
+.btn_already{
+    background:transparent;
+    border:1px solid gray;
+    margin-top:20px;
+}
+.btn_notyet{
+    background:transparent;
+    border:1px solid gray;
+    margin-top:20px;
+}
