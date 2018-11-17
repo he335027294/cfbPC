@@ -1,3 +1,3 @@
 ﻿# meProject
-letsgo project
-//hiahiahia~~
+this is a PC project with server
+
