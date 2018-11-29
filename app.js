@@ -12,7 +12,9 @@ const routerRegister=require("./router/register");
 const routerXingcheng=require("./router/xingcheng");
 const routerQuchu=require("./router/quchu");
 //3:绑定监听端口
-app.listen(3000);
+app.listen(3000,()=>{
+    console.log("server create success,home page http://127.0.0.1:3000/font_page.html")
+});
 app.use("/login",routerLogin);
 app.use("/register",routerRegister);
 app.use("/xingcheng",routerXingcheng);
